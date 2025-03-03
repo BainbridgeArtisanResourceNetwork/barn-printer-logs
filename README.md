@@ -1,5 +1,15 @@
 # barn-printer-logs
 
+There are two versions of notebooks in here:
+  - original one in the notebooks/ directory loading metrics from data/ directory.
+  - latest one, using a notebook in the ./ directory loading metrics from a Google Sheet.
+
+## New version 
+
+Using Google Colaboratory environment, the notebook `Evaluate_3D_Printer_Logs.ipynb` loads captured printer statistics, and generates graphs with optional downloads. It requires a Google account and permission to use it. You may not have access to the printer logs - they're in a Google Sheet I maintain in a BARN-specific account. But you can see the current version of the data captured in this notebook.
+
+## Older Version
+
 This is a capture and quick analysis of the statistics we capture from our collection of 3D printers. There's not a lot of data available - mainly print-time and filament-used. These are cumulative values, and have (so far) recorded them intermittently.
 
 This is also intended to be educational and demonstrative to other org members, to learn how to:
@@ -26,6 +36,8 @@ There is a requirements.txt here that captures the packages I loaded into a virt
 * pip install seaborn
 * pip install scikit-learn
 * pip install jupyter
+
+--30--
 
 Now when you're in this directory, should execute the command ```jupyter notebook``` and follow the instructions
 to open a browser to the appropriate location.
